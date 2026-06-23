@@ -1,1 +1,493 @@
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TopupPlus Ghana | Cheap Data & Reseller Platform</title>
+
+<meta name="description" content="Buy affordable MTN, Telecel and AirtelTigo data bundles in Ghana. Become a reseller and earn daily profits with TopupPlus.">
+<meta name="keywords" content="Cheap Data Ghana, MTN Data, Telecel Data, AirtelTigo Data, Data Reseller Ghana, TopupPlus">
+<meta name="author" content="TopupPlus">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8fafc;
+color:#1f2937;
+line-height:1.6;
+}
+
+:root{
+--green:#0f8a5f;
+--gold:#f4b400;
+--dark:#111827;
+--light:#ffffff;
+--red:#dc2626;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+background:linear-gradient(135deg,#0f8a5f,#0b6b49);
+color:#fff;
+padding:20px 0;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 2px 15px rgba(0,0,0,.15);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:2rem;
+font-weight:800;
+color:#fff;
+}
+
+.nav-btn{
+background:var(--gold);
+color:#000;
+padding:12px 25px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+}
+
+.hero{
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80');
+background-size:cover;
+background-position:center;
+color:#fff;
+padding:100px 0;
+text-align:center;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:20px;
+font-weight:800;
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:800px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+margin:10px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.btn-primary{
+background:var(--gold);
+color:#000;
+}
+
+.btn-secondary{
+background:#fff;
+color:var(--green);
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:60px 0;
+}
+
+.stat-box{
+background:#fff;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 25px rgba(0,0,0,.08);
+}
+
+.stat-box h3{
+color:var(--green);
+font-size:2rem;
+}
+
+.section{
+padding:80px 0;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+color:var(--dark);
+font-weight:800;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:var(--green);
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.step{
+background:#fff;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 25px rgba(0,0,0,.08);
+}
+
+.step-number{
+width:60px;
+height:60px;
+background:var(--green);
+color:#fff;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:1.5rem;
+font-weight:700;
+margin:auto;
+margin-bottom:15px;
+}
+
+.reseller{
+background:linear-gradient(135deg,#111827,#1f2937);
+color:#fff;
+}
+
+.reseller .section-title{
+color:#fff;
+}
+
+.cta{
+background:var(--green);
+color:#fff;
+text-align:center;
+padding:80px 20px;
+}
+
+.cta h2{
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+footer{
+background:#111827;
+color:#fff;
+padding:30px;
+text-align:center;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+color:white;
+text-decoration:none;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+z-index:9999;
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.08);}
+100%{transform:scale(1);}
+}
+
+.notice{
+background:#fff3cd;
+border-left:5px solid #ffc107;
+padding:20px;
+margin-top:30px;
+border-radius:10px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.2rem;
+}
+
+.section-title{
+font-size:2rem;
+}
+
+.hero{
+padding:80px 0;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">TOPUPPLUS</div>
+
+<a href="https://app.datahubgh.com/user" class="nav-btn">
+Register Now
+</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+
+<h1>🇬🇭 Buy Cheap Data & Earn Daily Income With TopupPlus</h1>
+
+<p>
+Get affordable MTN, Telecel and AirtelTigo data bundles delivered instantly.
+Become a reseller, set your own prices and withdraw your profits directly to Mobile Money.
+</p>
+
+<a href="https://app.datahubgh.com/user" class="btn btn-primary">
+🚀 Buy Data Now
+</a>
+
+<a href="https://app.datahubgh.com/user" class="btn btn-secondary">
+💰 Become A Reseller
+</a>
+
+</div>
+</section>
+
+<section class="container">
+<div class="stats">
+
+<div class="stat-box">
+<h3>24/7</h3>
+<p>Platform Access</p>
+</div>
+
+<div class="stat-box">
+<h3>Instant</h3>
+<p>Data Delivery</p>
+</div>
+
+<div class="stat-box">
+<h3>Daily</h3>
+<p>Profit Withdrawals</p>
+</div>
+
+<div class="stat-box">
+<h3>3 Networks</h3>
+<p>MTN, Telecel & AirtelTigo</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">Why Choose TopupPlus?</h2>
+
+<div class="features">
+
+<div class="card">
+<h3>📱 Affordable Data</h3>
+<p>Save money with competitively priced data bundles across Ghana's major networks.</p>
+</div>
+
+<div class="card">
+<h3>⚡ Fast Delivery</h3>
+<p>Receive your bundles quickly and conveniently after payment.</p>
+</div>
+
+<div class="card">
+<h3>💳 Mobile Money Friendly</h3>
+<p>Easy payments and withdrawals through all major MoMo platforms.</p>
+</div>
+
+<div class="card">
+<h3>🛡 Trusted Platform</h3>
+<p>Reliable platform used by customers and resellers across Ghana.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section" style="background:#eef7f3;">
+<div class="container">
+
+<h2 class="section-title">How It Works</h2>
+
+<div class="steps">
+
+<div class="step">
+<div class="step-number">1</div>
+<h3>Create Account</h3>
+<p>Register on TopupPlus.</p>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<h3>Select Bundle</h3>
+<p>Choose your preferred data package.</p>
+</div>
+
+<div class="step">
+<div class="step-number">3</div>
+<h3>Pay Securely</h3>
+<p>Use Mobile Money for payment.</p>
+</div>
+
+<div class="step">
+<div class="step-number">4</div>
+<h3>Receive Data</h3>
+<p>Get your bundle delivered instantly.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section reseller">
+<div class="container">
+
+<h2 class="section-title">💰 Become A Reseller & Earn Daily</h2>
+
+<div class="features">
+
+<div class="card">
+<h3>Set Your Own Prices</h3>
+<p>Add your preferred markup and maximize profits.</p>
+</div>
+
+<div class="card">
+<h3>Earn From Every Sale</h3>
+<p>Generate income from data sales daily.</p>
+</div>
+
+<div class="card">
+<h3>Affiliate Commissions</h3>
+<p>Recruit resellers under your team and earn commissions.</p>
+</div>
+
+<div class="card">
+<h3>Instant Withdrawals</h3>
+<p>Withdraw profits directly to your Mobile Money account.</p>
+</div>
+
+</div>
+
+<div class="notice">
+<strong>Note:</strong> During periods of high demand or network maintenance, data delivery may occasionally be delayed. Orders remain processed and monitored until successful delivery.
+</div>
+
+</div>
+</section>
+
+<section class="cta">
+
+<h2>Ready To Save On Data & Start Earning?</h2>
+
+<p style="margin-bottom:25px;">
+Join hundreds of users enjoying affordable data bundles and income opportunities.
+</p>
+
+<a href="https://app.datahubgh.com/user" class="btn btn-primary">
+Join TopupPlus Today
+</a>
+
+</section>
+
+<footer>
+
+<h3>TopupPlus Ghana</h3>
+
+<p>Affordable Data • Fast Delivery • Daily Income Opportunities</p>
+
+<br>
+
+<p>
+📱 WhatsApp: 0556311396
+</p>
+
+<p>
+📞 Call: 0556311396
+</p>
+
+</footer>
+
+<a href="https://wa.me/233556311396" class="whatsapp-float" target="_blank">
+💬
+</a>
+
+</body>
+</html>
+```
+
